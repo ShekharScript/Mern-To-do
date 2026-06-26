@@ -11,14 +11,15 @@ import { collectionName, connection } from "./dbconfig.js";
  
 const app = e();
 
-app.use(e.json());
+app.use(e.json()); //middlewares
 
-app.use(cors({
-    origin: 'mern-to-do-8wvi.vercel.app',
+app.use(cors({ 
+    origin: 'mern-to-do-8wvi.vercel.app', // 'http://localhost:5173'
+
     credentials: true
 }))
 
-app.use(cookieParser());
+app.use(cookieParser()); //middleware
 
 app.post("/login", async (req, resp) => {
     const userData = req.body;
@@ -163,7 +164,7 @@ app.delete("/delete-multiple",verifyJWTToken, async (req, resp) => {
 })
 
 
-function verifyJWTToken(req, resp, next) {
+function verifyJWTToken(req, resp, next) { //this is also a middleware which is used by calling a function whic later call next()
     //  console.log("verifyJWTToken ", req.cookies['token']);
     const token = req.cookies['token'];
     jwt.verify(token, process.env.JWT_SECRET, (error, decoded) => {
