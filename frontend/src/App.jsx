@@ -1,6 +1,6 @@
 
 import './style/app.css'
-import NavBar from './components/navbar'
+import NavBar from './components/NavBar'
 import { Routes,Route } from 'react-router-dom'
 import AddTask from './components/AddTask'
 import List from './components/List'
