@@ -1,13 +1,13 @@
 import e from "express";
-import { collectionName, connection } from "./dbconfig.js";
 import cors from 'cors';                    //allow requests from other origins
 import { ObjectId } from "mongodb";
 import jwt from 'jsonwebtoken'
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 
-
 dotenv.config(); 
+
+import { collectionName, connection } from "./dbconfig.js";
  
 const app = e();
 
