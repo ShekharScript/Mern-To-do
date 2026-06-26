@@ -4,16 +4,11 @@ A highly responsive, production-ready Full-Stack Task Management web application
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - **🔒 Token-Based Authentication**: Secure User Registration (`/signup`) and Log In (`/login`) mechanisms utilizing **JSON Web Tokens (JWT)** passed via state-safe cookie parsers.
 - **🛡️ Reusable Route Protection**: A highly robust `<Protected>` React structural wrapper component that acts as a client-side middleware to restrict unauthenticated access to the main dashboard.
 - **⚡ High-Performance Architecture**: Native MongoDB client database execution loops without standard bulky ORM middleware wrappers for rapid low-latency reads and writes.
-- **📦 Advanced Task Operations**:
-  - Dynamic individual task rendering using React dynamic component states.
-  - Multi-selection array mappings allowing **Bulk / Multiple Deletion** operations via a single custom `$in` MongoDB query pipeline execution.
-- **🎨 Modern Responsive UI**: Crafted with specialized, modular CSS properties ensuring dynamic element adjustment, dedicated navigation layers (`NavBar`), and clean UX transitions.
-- **🔐 Environment Variable Security**: Total removal of hardcoded authentication keys and remote URI strings using `.env` validation nodes managed via `dotenv`.
 
 ---
 
@@ -23,7 +18,6 @@ A highly responsive, production-ready Full-Stack Task Management web application
 * **Framework**: React.js (Vite Setup Ecosystem)
 * **Routing Engine**: React Router DOM (v6 layout nodes)
 * **Styling Layers**: Custom Vanillia CSS (Grid/Flex Layouts)
-* **Production Bundler**: Rollup Compiler Engine
 
 ### Backend (Server-side)
 * **Runtime**: Node.js
