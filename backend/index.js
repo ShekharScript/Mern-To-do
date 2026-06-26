@@ -14,7 +14,7 @@ const app = e();
 app.use(e.json());
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'mern-to-do-8wvi.vercel.app',
     credentials: true
 }))
 
