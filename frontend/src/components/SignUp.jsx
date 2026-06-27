@@ -15,7 +15,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
     const handleSignUp= async()=>{
             console.log(userData);
-        let result= await fetch('http://localhost:3200/signup',{
+        let result= await fetch('https://mern-to-do-rpgq.onrender.com/signup',{
             method:'Post',
             body:JSON.stringify(userData),
             headers:{
