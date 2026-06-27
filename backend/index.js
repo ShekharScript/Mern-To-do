@@ -14,8 +14,7 @@ const app = e();
 app.use(e.json()); //middlewares
 
 app.use(cors({ 
-    origin: 'mern-to-do-8wvi.vercel.app', // 'http://localhost:5173'
-
+    origin: "*",
     credentials: true
 }))
 
